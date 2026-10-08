@@ -19,6 +19,7 @@ void init(Plugin *p) {
 
 	readThemeAndContrastFromDefault();
 
+#ifndef CARDINAL_MINI_TRIM_INIT
 	p->addModel(modelAdaptiveQuantizer);
 	p->addModel(modelBigButtonSeq);
 	p->addModel(modelBigButtonSeq2);
@@ -49,6 +50,7 @@ void init(Plugin *p) {
 	p->addModel(modelWriteSeq32);
 	p->addModel(modelWriteSeq64);
 	p->addModel(modelBlankPanel);
+#endif
 }
 
 
